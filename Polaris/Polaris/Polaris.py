@@ -52,4 +52,12 @@ def z5():
             userstr[i] = userstr[i].upper()
     print(' '.join(userstr))
 
-z5()
+def z6():
+    tempstr = [] #ѕустота и тлен
+    userstr = str(input('¬ведите ваш бесполезный текст\n')).lower()
+    for i in userstr:
+        if userstr.count(i) == 1:
+            tempstr.append(i)
+    print(' '.join(tempstr))
+
+z6()
