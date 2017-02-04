@@ -30,7 +30,20 @@ def z3():
     userstr = str(input('Введите номер вашей кредитки, если хотите повысить нам настроение: '))
     print('{} **** **** {}'.format(userstr[0:4], userstr[12:16]))
 
+#Задание 4
+def z4():
+    userstr = (str(input("Введите любую, желательно - осмысленную, строку\n"))).split(' ')
+    print('Слова длинее семи символов:\n')
+    for i in userstr:
+        if len(i) > 7:
+            print(userstr.pop(userstr.index(i)))
+    print("Слова длиною от 4 до 7 символов\n")
+    for i in userstr:
+        if 4 <= len(i) <= 7:
+            print(userstr.pop(userstr.index(i)))
+    print('Остальные слова\n')
+    for i in userstr:
+        print(i)
 
-#z1()
-#z2()
-#z3()
+
+z4()
