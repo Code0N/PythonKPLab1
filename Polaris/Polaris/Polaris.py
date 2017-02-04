@@ -11,3 +11,16 @@ except ValueError as ex:
 except:
     print('Ваш ввод слишком криворукий для этого скрипта')
 
+#Задание №2
+userinput = int(input('Введите некое число: '))
+rangelist = range(userinput)
+isup = True
+temp = -1
+for i in rangelist:
+    if i <= temp:
+        rangelist = False
+        break
+    else:
+        temp = i
+print(isup)
+
