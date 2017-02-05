@@ -60,4 +60,17 @@ def z6():
             tempstr.append(i)
     print(' '.join(tempstr))
 
-z6()
+def z7():
+    templist = []
+    tempstr = ''
+    filevar = open('urllist.txt', 'r')
+    for i in filevar:
+        if i.startswith('www.'):
+            tempstr = 'http://' + i
+            if  not tempstr.endswith('.com'):
+                tempstr = tempstr + '.com'
+            templist.append(tempstr)
+    for i in templist:
+        print(i)
+
+z7()
