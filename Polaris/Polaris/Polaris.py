@@ -66,17 +66,15 @@ def z6():
     print(' '.join(tempstr))
 
 def z7():
-    templist = []
     tempstr = ''
     filevar = open('urllist.txt', 'r')
-    for i in filevar:
-        if i.startswith('www.'):
-            tempstr = 'http://' + i
-            if  not tempstr.endswith('.com'):
-                tempstr = tempstr + '.com'
-            templist.append(tempstr)
+    templist = [i.replace('\n', '') for i in filevar] #Костыли вы мои, костыли
     for i in templist:
-        print(i)
+        if i.startswith('www.'):
+            tempstr = 'https://' + i
+            if not i.endswith('.com'):
+                tempstr += '.com'
+            print(tempstr)
 
 def z8():
     from random import randint
@@ -93,4 +91,4 @@ def z8():
     print('Количество элементов в списке {}'.format(len(random_numbers)))
     print('Отдельное случайное число - {}'.format(randint(1, 10000)))
 
-z5()
+z7()
