@@ -7,7 +7,7 @@ def z1():
         if userinput < 0:
             raise ValueError('Число отрицательное')
         print('{} руб. {} коп.'.format(str(userinput).split('.')[0], str(userinput).split('.')[1])) #Костыль-мастер
-    except ValueError as ex:
+    except ValueError:
         print('An error occured: ValueError')
     except:
         print('Ваш ввод слишком криворукий для этого скрипта')
@@ -28,7 +28,12 @@ def z2():
 #Задание №3
 def z3():
     userstr = str(input('Введите номер вашей кредитки, если хотите повысить нам настроение: '))
-    print('{} **** **** {}'.format(userstr[0:4], userstr[12:16]))
+    if not userstr.isdigit():
+        print('Номер кредитной карты может состоять только из цифр')
+    elif len(userstr) < 16 or len(userstr) > 16:
+        print('Ошибка длины номера карты: допустимо только 16 цифр')
+    else:
+        print('{} **** **** {}'.format(userstr[0:4], userstr[12:16]))
 
 #Задание 4
 def z4():
@@ -92,4 +97,4 @@ def z8():
 def z9():
     pass
 
-z9()
+z3()
