@@ -22,6 +22,33 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="5.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="6.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="7.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="8.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="backup.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Polaris.py" />
   </ItemGroup>
   <ItemGroup>
