@@ -22,9 +22,6 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="1.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Polaris.py" />
   </ItemGroup>
   <ItemGroup>
