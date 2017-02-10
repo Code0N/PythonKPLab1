@@ -93,8 +93,4 @@ def z8():
     print('Количество элементов в списке {}'.format(len(random_numbers)))
     print('Отдельное случайное число - {}'.format(randint(1, 10000)))
 
-
-def z9():
-    pass
-
-z2()
+z5()
