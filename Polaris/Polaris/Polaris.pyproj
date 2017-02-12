@@ -46,6 +46,9 @@
     <Compile Include="8.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="9.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="backup.py">
       <SubType>Code</SubType>
     </Compile>
