@@ -25,6 +25,9 @@
     <Compile Include="1.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="10.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="2.py">
       <SubType>Code</SubType>
     </Compile>
