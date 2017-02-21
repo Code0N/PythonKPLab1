@@ -1,21 +1,18 @@
-# -*- coding: cp1251 -*-
-
-from random import choice
-
 rangelist = []
 while True:
-	temp = str(input('‚ведите число. или символ длЯ прекращениЯ: '))
+	temp = str(input('Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ. РёР»Рё СЃРёРјРІРѕР» РґР»СЏ РїСЂРµРєСЂР°С‰РµРЅРёСЏ: '))
 	if temp.isdigit():
 		rangelist.append(int(temp))
 	else:
 		break
-isup = True
-temp = -1
-for i in rangelist:
-    if i <= temp:
-        rangelist = False
-        temp = i
-        break
-    else:
-        temp = i
-print(isup)
+
+temp = None
+for i in range(len(rangelist)-1):
+	if (rangelist[i] >= rangelist[i+1]):
+		temp = rangelist[i+1]
+		break
+
+if temp is None:
+	print('True')
+else:
+	print('False')

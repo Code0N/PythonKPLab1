@@ -1,14 +1,12 @@
-# -*- coding: cp1251 -*-
-
-userstr = (str(input("Введите любую, желательно - осмысленную, строку\n"))).split(' ')
-print('Слова длинее семи символов:\n')
+userstr = (str(input("Р’РІРµРґРёС‚Рµ Р»СЋР±СѓСЋ, Р¶РµР»Р°С‚РµР»СЊРЅРѕ - РѕСЃРјС‹СЃР»РµРЅРЅСѓСЋ, СЃС‚СЂРѕРєСѓ\n"))).split(' ')
+print('РЎР»РѕРІР° РґР»РёРЅРµРµ СЃРµРјРё СЃРёРјРІРѕР»РѕРІ:\n')
 for i in userstr:
-    if len(i) > 7:
-        print(userstr.pop(userstr.index(i)))
-print("Слова длиною от 4 до 7 символов\n")
+	if len(i) > 7:
+		print(userstr.pop(userstr.index(i)))
+print("РЎР»РѕРІР° РґР»РёРЅРѕСЋ РѕС‚ 4 РґРѕ 7 СЃРёРјРІРѕР»РѕРІ\n")
 for i in userstr:
-    if 4 <= len(i) <= 7:
-        print(userstr.pop(userstr.index(i)))
-print('Остальные слова\n')
+	if (len(i) >= 4) and (len(i) <= 7) :
+		print(userstr.pop(userstr.index(i)))
+print('РћСЃС‚Р°Р»СЊРЅС‹Рµ СЃР»РѕРІР°\n')
 for i in userstr:
-    print(i)
+	print(i)
