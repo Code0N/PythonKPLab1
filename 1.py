@@ -6,4 +6,4 @@ try:
 except ValueError:
     print('An error occured: ValueError')
 except:
-    print('¬аш ввод слишком неподход¤щий дл¤ этого скрипта')
+    print('Ваш ввод слишком неподходящий для этого скрипта')

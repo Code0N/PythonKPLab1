@@ -1,6 +1,4 @@
-# -*- coding: cp1251 -*-
-
-userstr = (str(input('Введите свою бесполезную строку:\n'))).split(' ')
+userstr = (str(input('Р’РІРµРґРёС‚Рµ СЃРІРѕСЋ Р±РµСЃРїРѕР»РµР·РЅСѓСЋ СЃС‚СЂРѕРєСѓ:\n'))).split(' ')
 for i in range(len(userstr)):
     if ((userstr[i])[0]).isupper():
         userstr[i] = userstr[i].upper()

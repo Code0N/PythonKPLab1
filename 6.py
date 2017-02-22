@@ -1,7 +1,5 @@
-# -*- coding: cp1251 -*-
-
-tempstr = [] #Пустота и тлен
-userstr = str(input('Введите ваш бесполезный текст\n')).lower()
+tempstr = [] #С•СѓСЃС‚РѕС‚Р° Рё С‚Р»РµРЅ
+userstr = str(input('Р’РІРµРґРёС‚Рµ РІР°С€ Р±РµСЃРїРѕР»РµР·РЅС‹Р№ С‚РµРєСЃС‚\n')).lower()
 for i in userstr:
     if userstr.count(i) == 1:
         tempstr.append(i)

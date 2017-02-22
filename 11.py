@@ -1,5 +1,3 @@
-# -*- coding: cp1251 -*-
-
 def frange(start, stop, step=0.1):
     i = start-step
     while i < stop-step*2:

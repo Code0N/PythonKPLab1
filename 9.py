@@ -1,12 +1,10 @@
-# -*- coding: cp1251 -*-
-
 from math import trunc
 
 def outError(count, enought):
-    print('Äëÿ âûäà÷è ñóììû íå õâàòàåò {} êóïþð íîìèíàëîì {} ðóáëåé'.format(count, enought))
+    print('Æ’Ð»Â¤ Ð²Ñ‹Ð´Ð°Ñ‡Ð¸ ÑÑƒÐ¼Ð¼Ñ‹ Ð½Ðµ Ñ…Ð²Ð°Ñ‚Ð°ÐµÑ‚ {} ÐºÑƒÐ¿ÑŽÑ€ Ð½Ð¾Ð¼Ð¸Ð½Ð°Ð»Ð¾Ð¼ {} Ñ€ÑƒÐ±Ð»ÐµÐ¹'.format(count, enought))
 
 bills = {1000: 10, 100: 100, 10: 50, 1: 70}
-usernum = int(input('Ââåäèòå ñóììó äåíåã '))
+usernum = int(input('Â¬Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑƒÐ¼Ð¼Ñƒ Ð´ÐµÐ½ÐµÐ³ '))
 i = 1000
 tempstr = ''
 while(i >= 1):
